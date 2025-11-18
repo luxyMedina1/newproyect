@@ -1,0 +1,53 @@
+git config --global user.name "luxyMedina1"
+git config --global user.email "lucia13Medi@gmail.com"
+
+subir pryecto a repositorio
+1. Entrar  a la carpeta del proyecto a subir (estar seguro que cuando ejecutemos , este en la carpeta del proyecto)
+2. ejecutar el comando ;git init
+3.Ejecutar el comando :git add . (si olo quieres agg algo pones "" y el nombre de tu carpeta)
+4. Ejecutar el comando : git commit -m " Subiendo proyecto a repositorio"
+5. conectar la carpeta con el repositorio  en Git :(es HTTPS) COPIAR EL LINK 
+ git remote add origin https://github.com/luxyMedina1/newproyect.git
+6. Ejecutar git branch -M  main (branch significa rama , es para crear un cambio sin afectar la principal)
+7. Ejecutar git push -u origin main
+
+para futuros cambios;(solo para cambios )
+8. Ejecutar git add .
+9.git commit .m "decrpcion del cambio "
+10: git push
+
+
+TAREA ;Investigación Introducción a Control de Versiones
+
+1: Concepto de "commit" en git?
+es como guardar una versión del proyecto. Registra los cambios hechos en los archivos con un mensaje que explica qué se modificó.
+
+2:Que es un "push" en git?
+El comando git push envía los commits que hiciste en tu computadora al repositorio remoto (por ejemplo, GitHub).
+
+3:Que es un "pull" en git?
+El comando git pull descarga los cambios más recientes del repositorio remoto y los mezcla con tu copia local.
+
+4: que es una rama (branch) como se usa y para que 
+Una rama es una línea de desarrollo independiente. Se usa para trabajar en nuevas funciones o correcciones sin afectar la rama
+ principal (main o master). Luego se puede unir al proyecto con un merge.
+
+5: Que es un "merge" y cuando se usa?
+Merge significa combinar los cambios de una rama con otra. Se usa cuando terminas
+ una tarea en una rama y quieres integrar esos cambios en la rama principal.
+
+6: Que es un pull request y un merge request y para que se usan?
+Son solicitudes para revisar y aprobar cambios antes de unirlos a la rama principal.
+Pull request se usa en GitHub.
+Merge request se usa en GitLab.
+Sirven para colaborar y revisar el código antes de fusionarlo.
+
+7: para que sirve el comando: git log ?
+Muestra el historial de commits, con información como el autor, fecha y mensaje de cada uno
+
+8: Como se deshace un cambio o commit?
+Hay varias formas:
+
+git restore <archivo> → deshace cambios sin confirmar.
+git reset --soft <id_commit> → deshace un commit pero deja los cambios listos para modificar.
+git reset --hard <id_commit> → borra completamente los cambios hasta ese punto.
